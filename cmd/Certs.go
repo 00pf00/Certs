@@ -45,9 +45,10 @@ func main() {
 	crt.Leaf = certs[0]
 	fmt.Println(crt.Leaf.DNSNames)
 
+	getServerCerts(crt)
 }
 func getServerCerts(crt tls.Certificate) {
-	dns := []string{"www.proxy.tinykube.com"};
+	dns := []string{"cls-qwyg220a-proxy.ccs.tencent-cloud.com"}
 	//dns :=  []string{};
 	//ips := [] string{"127.0.0.1"}
 	ips := [] string{}
